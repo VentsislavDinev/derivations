@@ -3,7 +3,7 @@
 {stdenv}:
 stdenv.mkDerivation {
   name = "hello";
-  src = ../../src;
+  src = ../../src/c;
   buildPhase = ''
     gcc ./hello-world.c -o ./hello-world
   '';

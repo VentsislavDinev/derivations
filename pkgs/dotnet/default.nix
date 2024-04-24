@@ -5,23 +5,25 @@
   dotnet-sdk,
 }:
 stdenv.mkDerivation {
-  name = "hello";
-  src = ../../src;
+  name = "dotnet-hello-world";
+  src = ../../src/dotnet;
 
-  nativeBuild = [
+  nativeBuildInputs = [
     dotnet-sdk
   ];
 
   buildPhase = ''
     ls -la
-    dotnet build
+    dotnet run
+    ls -la
+    cd bin
   '';
   installPhase = ''
-    mkdir -p $out/bin/Debug/net6.0
-    cp ./hello-world $out/bin/Debug/net6.0
+    mkdir -p $out
+    ls -la
   '';
 
   meta = {
-    mainProgram = "hello-world";
+    mainProgram = "dotnet-hello-world";
   };
 }
