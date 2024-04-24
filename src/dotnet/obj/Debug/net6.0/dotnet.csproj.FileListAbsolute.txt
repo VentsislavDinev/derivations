@@ -1,0 +1,15 @@
+/home/vdinev/code/repos/c/src/dotnet/bin/Debug/net6.0/dotnet
+/home/vdinev/code/repos/c/src/dotnet/bin/Debug/net6.0/dotnet.deps.json
+/home/vdinev/code/repos/c/src/dotnet/bin/Debug/net6.0/dotnet.runtimeconfig.json
+/home/vdinev/code/repos/c/src/dotnet/bin/Debug/net6.0/dotnet.dll
+/home/vdinev/code/repos/c/src/dotnet/bin/Debug/net6.0/dotnet.pdb
+/home/vdinev/code/repos/c/src/dotnet/obj/Debug/net6.0/dotnet.csproj.AssemblyReference.cache
+/home/vdinev/code/repos/c/src/dotnet/obj/Debug/net6.0/dotnet.GeneratedMSBuildEditorConfig.editorconfig
+/home/vdinev/code/repos/c/src/dotnet/obj/Debug/net6.0/dotnet.AssemblyInfoInputs.cache
+/home/vdinev/code/repos/c/src/dotnet/obj/Debug/net6.0/dotnet.AssemblyInfo.cs
+/home/vdinev/code/repos/c/src/dotnet/obj/Debug/net6.0/dotnet.csproj.CoreCompileInputs.cache
+/home/vdinev/code/repos/c/src/dotnet/obj/Debug/net6.0/dotnet.dll
+/home/vdinev/code/repos/c/src/dotnet/obj/Debug/net6.0/refint/dotnet.dll
+/home/vdinev/code/repos/c/src/dotnet/obj/Debug/net6.0/dotnet.pdb
+/home/vdinev/code/repos/c/src/dotnet/obj/Debug/net6.0/dotnet.genruntimeconfig.cache
+/home/vdinev/code/repos/c/src/dotnet/obj/Debug/net6.0/ref/dotnet.dll
