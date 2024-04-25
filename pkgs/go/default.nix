@@ -1,16 +1,13 @@
-#if u want add addiotional packahge use , and package name.
-# {stdenv, dotnet-sdk_8}
 {
   stdenv,
   go,
 }:
 stdenv.mkDerivation {
-  name = "go-hello";
+  name = "go-hello-world";
   src = ../../src/go;
   buildPhase = ''
-    ls -la
+    export HOME=/build
     go build ./hello-world.go
-    ls -la
   '';
 
   nativeBuildInputs = [
@@ -18,11 +15,11 @@ stdenv.mkDerivation {
   ];
 
   installPhase = ''
-    ls - la
-    sudo mkdir -p $out/bin
-    cp ./hello-world
+    #mkdir -p $out/bin
+    #cp ./hello-world  $out/bin/go-hello-world
+    install -Dm755 ./hello-world "$out"/bin/go-hello-world
   '';
   meta = {
-    mainProgram = "rust-hello-world";
+    mainProgram = "go-hello-world";
   };
 }

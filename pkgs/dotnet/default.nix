@@ -13,14 +13,11 @@ stdenv.mkDerivation {
   ];
 
   buildPhase = ''
-    ls -la
     dotnet run
-    ls -la
     cd bin
   '';
   installPhase = ''
     mkdir -p $out
-    ls -la
   '';
 
   meta = {

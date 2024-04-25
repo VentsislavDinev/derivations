@@ -10,9 +10,7 @@ stdenv.mkDerivation {
   name = "rust-hello";
   src = ../../src/rust;
   buildPhase = ''
-    ls -la
     rustc ./hello.rs
-    ls -la
   '';
 
   nativeBuildInputs = [
