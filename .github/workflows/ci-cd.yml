@@ -1,0 +1,27 @@
+name: CI-CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  
+  Build_All:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package_name: ["go_hello_world", "rust_hello_world", "dotnet_hello_world", "hello_world", "wrapper_hello_world"]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v25
+      - uses: cachix/cachix-action@v14
+        with:
+          name: ventsitest
+          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+      - name: Build ${{ matrix.package_name }} derivation
+        run: nix build .#${{ matrix.package_name }}
+      
